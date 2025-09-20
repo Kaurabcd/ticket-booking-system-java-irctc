@@ -1,0 +1,50 @@
+[
+  {
+    "trainId": "TR001",
+    "trainNo": "12001",
+    "stationTimes": {
+      "New York": "08:00:00",
+      "Philadelphia": "10:00:00",
+      "Washington DC": "12:00:00"
+    },
+    "stations": ["New York", "Philadelphia", "Washington DC"],
+    "seats": [
+      [1, 1, 0, 1],
+      [0, 1, 1, 1]
+    ],
+    "departureTime": "08:00:00",
+    "endTime": "12:00:00"
+  },
+  {
+    "trainId": "TR002",
+    "trainNo": "13005",
+    "stationTimes": {
+      "Boston": "09:30:00",
+      "Hartford": "11:30:00",
+      "New York": "14:00:00"
+    },
+    "stations": ["Boston", "Hartford", "New York"],
+    "seats": [
+      [1, 0, 0, 1],
+      [1, 1, 1, 0]
+    ],
+    "departureTime": "09:30:00",
+    "endTime": "14:00:00"
+  },
+  {
+    "trainId": "TR003",
+    "trainNo": "14009",
+    "stationTimes": {
+      "Chicago": "07:00:00",
+      "Cleveland": "11:00:00",
+      "Pittsburgh": "14:00:00"
+    },
+    "stations": ["Chicago", "Cleveland", "Pittsburgh"],
+    "seats": [
+      [1, 1, 1, 0],
+      [0, 0, 1, 1]
+    ],
+    "departureTime": "07:00:00",
+    "endTime": "14:00:00"
+  }
+]

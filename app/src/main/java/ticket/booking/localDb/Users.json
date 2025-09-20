@@ -1,0 +1,64 @@
+[
+  {
+    "name": "Alice Johnson",
+    "password": "password123",
+    "hashedPassword": "5f4dcc3b5aa765d61d8327deb882cf99",
+    "userId": "U001",
+    "ticketsBooked": [
+      {
+        "ticketId": "T001",
+        "train": {
+          "trainId": "TR001",
+          "trainNo": "12001",
+          "stationTimes": {
+            "New York": "08:00:00",
+            "Philadelphia": "10:00:00",
+            "Washington DC": "12:00:00"
+          },
+          "stations": ["New York", "Philadelphia", "Washington DC"],
+          "seats": [
+            [1, 1, 0, 1],
+            [0, 1, 1, 1]
+          ],
+          "departureTime": "08:00:00",
+          "endTime": "12:00:00"
+        },
+        "source": "New York",
+        "destination": "Washington DC",
+        "dateOfTravel": "2025-09-10",
+        "userId": "U001"
+      }
+    ]
+  },
+  {
+    "name": "Bob Smith",
+    "password": "qwerty",
+    "hashedPassword": "d8578edf8458ce06fbc5bb76a58c5ca4",
+    "userId": "U002",
+    "ticketsBooked": [
+      {
+        "ticketId": "T002",
+        "train": {
+          "trainId": "TR002",
+          "trainNo": "13005",
+          "stationTimes": {
+            "Boston": "09:30:00",
+            "Hartford": "11:30:00",
+            "New York": "14:00:00"
+          },
+          "stations": ["Boston", "Hartford", "New York"],
+          "seats": [
+            [1, 0, 0, 1],
+            [1, 1, 1, 0]
+          ],
+          "departureTime": "09:30:00",
+          "endTime": "14:00:00"
+        },
+        "source": "Boston",
+        "destination": "New York",
+        "dateOfTravel": "2025-09-12",
+        "userId": "U002"
+      }
+    ]
+  }
+]
