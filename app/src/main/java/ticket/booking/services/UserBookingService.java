@@ -22,7 +22,17 @@ public class UserBookingService {
 
     UserBookingService(User user) throws IOException {
         this.user = user;
+        loadUsers();
         //load users from users.json
+//        File users = new File(USER_FILE_PATH);
+//        userList = objectMapper.readValue(users, new TypeReference<List<User>>(){});
+    }
+
+    UserBookingService() throws IOException{
+    loadUsers();
+    }
+
+    public void loadUsers() throws IOException{
         File users = new File(USER_FILE_PATH);
         userList = objectMapper.readValue(users, new TypeReference<List<User>>(){});
     }
@@ -69,9 +79,7 @@ public class UserBookingService {
             if (ticketId == null || ticketId.isEmpty()) {
                 return Boolean.FALSE;
             }
-
             boolean removed = user.getTicketsBooked().removeIf(ticket -> ticket.getTicketId().equals(ticketId));
-
             return removed ? Boolean.TRUE : Boolean.FALSE;
     }
 
